@@ -1,0 +1,16 @@
+.icons {
+  align-items: center;
+  display: flex;
+
+  justify-content: flex-start;
+  left: 10px;
+}
+
+.icon {
+  margin: 0 1rem;
+  width: 7.5rem;
+}
+
+.icon:first-child {
+  margin-left: 0;
+}

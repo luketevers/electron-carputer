@@ -17,6 +17,20 @@
       "plugins": [
         "transform-class-properties",
         "transform-es2015-classes",
+        ["inline-react-svg",
+          {
+            "svgo": {
+              "plugins": [
+                {
+                  "removeAttrs": { "attrs": "(data-name)" }
+                },
+                {
+                  "cleanupIDs": true
+                }
+              ]
+            }
+          }
+        ],
         ["flow-runtime", {
           "assert": true,
           "annotate": true
