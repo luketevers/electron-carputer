@@ -1,16 +1,27 @@
 .icons {
   align-items: center;
   display: flex;
-
   justify-content: flex-start;
   left: 10px;
 }
 
-.icon {
+.tile {
+  background: #f2f2f2;
+  box-shadow: 0 0 12px #f1f1f1;
+  font-size: 0;
   margin: 0 1rem;
-  width: 7.5rem;
+  padding: 1rem;
+  transition: box-shadow .25s ease-in-out, opacity .25s ease-in-out;
 }
 
-.icon:first-child {
+.tile:hover {
+  box-shadow: none;
+}
+
+.tile:first-child {
   margin-left: 0;
+}
+
+.icon {
+  width: 7.5rem;
 }
